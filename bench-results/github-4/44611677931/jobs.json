@@ -1,0 +1,615 @@
+[
+ {
+  "id": 135869673153,
+  "name": "Build Element Web (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44611677931/job/135869673153",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:44:12Z",
+  "started_at": "2026-11-19T20:44:14Z",
+  "completed_at": "2026-11-19T20:45:58Z",
+  "labels": [
+   "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000187",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:44:14Z",
+    "completed_at": "2026-11-19T20:44:15Z"
+   },
+   {
+    "name": "Checkout code",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:44:15Z",
+    "completed_at": "2026-11-19T20:44:18Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:44:18Z",
+    "completed_at": "2026-11-19T20:44:23Z"
+   },
+   {
+    "name": "Fetch layered build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:44:23Z",
+    "completed_at": "2026-11-19T20:44:51Z"
+   },
+   {
+    "name": "Copy config",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:44:51Z",
+    "completed_at": "2026-11-19T20:44:51Z"
+   },
+   {
+    "name": "Build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:44:51Z",
+    "completed_at": "2026-11-19T20:45:40Z"
+   },
+   {
+    "name": "Upload Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:45:40Z",
+    "completed_at": "2026-11-19T20:45:46Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-19T20:45:46Z",
+    "completed_at": "2026-11-19T20:45:56Z"
+   },
+   {
+    "name": "Post Checkout code",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-19T20:45:56Z",
+    "completed_at": "2026-11-19T20:45:56Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-19T20:45:56Z",
+    "completed_at": "2026-11-19T20:45:56Z"
+   }
+  ]
+ },
+ {
+  "id": 135870721378,
+  "name": "Run Tests [Chrome] 4/4 (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44611677931/job/135870721378",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:58Z",
+  "started_at": "2026-11-19T20:46:00Z",
+  "completed_at": "2026-11-19T21:03:43Z",
+  "labels": [
+   "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000200",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:46:00Z",
+    "completed_at": "2026-11-19T20:46:03Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:46:03Z",
+    "completed_at": "2026-11-19T20:46:09Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:46:09Z",
+    "completed_at": "2026-11-19T20:46:10Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:46:10Z",
+    "completed_at": "2026-11-19T20:46:21Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:46:21Z",
+    "completed_at": "2026-11-19T20:53:27Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:53:27Z",
+    "completed_at": "2026-11-19T20:53:32Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:53:32Z",
+    "completed_at": "2026-11-19T20:53:33Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:53:33Z",
+    "completed_at": "2026-11-19T20:53:33Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:53:33Z",
+    "completed_at": "2026-11-19T21:03:37Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:03:37Z",
+    "completed_at": "2026-11-19T21:03:38Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 18,
+    "started_at": "2026-11-19T21:03:38Z",
+    "completed_at": "2026-11-19T21:03:41Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:03:41Z",
+    "completed_at": "2026-11-19T21:03:41Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:03:41Z",
+    "completed_at": "2026-11-19T21:03:41Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:03:41Z",
+    "completed_at": "2026-11-19T21:03:41Z"
+   }
+  ]
+ },
+ {
+  "id": 135870721483,
+  "name": "Run Tests [Chrome] 2/4 (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44611677931/job/135870721483",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:58Z",
+  "started_at": "2026-11-19T20:46:00Z",
+  "completed_at": "2026-11-19T21:04:52Z",
+  "labels": [
+   "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000198",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:46:00Z",
+    "completed_at": "2026-11-19T20:46:03Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:46:03Z",
+    "completed_at": "2026-11-19T20:46:09Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:46:09Z",
+    "completed_at": "2026-11-19T20:46:11Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:46:11Z",
+    "completed_at": "2026-11-19T20:46:25Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:46:25Z",
+    "completed_at": "2026-11-19T20:57:39Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:57:39Z",
+    "completed_at": "2026-11-19T20:57:43Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:57:43Z",
+    "completed_at": "2026-11-19T20:57:44Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:57:44Z",
+    "completed_at": "2026-11-19T20:57:44Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:57:44Z",
+    "completed_at": "2026-11-19T21:04:46Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:04:46Z",
+    "completed_at": "2026-11-19T21:04:47Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 18,
+    "started_at": "2026-11-19T21:04:47Z",
+    "completed_at": "2026-11-19T21:04:50Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:04:50Z",
+    "completed_at": "2026-11-19T21:04:50Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:04:50Z",
+    "completed_at": "2026-11-19T21:04:50Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:04:50Z",
+    "completed_at": "2026-11-19T21:04:50Z"
+   }
+  ]
+ },
+ {
+  "id": 135870721485,
+  "name": "Run Tests [Chrome] 3/4 (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44611677931/job/135870721485",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:58Z",
+  "started_at": "2026-11-19T20:45:59Z",
+  "completed_at": "2026-11-19T21:02:50Z",
+  "labels": [
+   "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000197",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:46:00Z",
+    "completed_at": "2026-11-19T20:46:03Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:46:03Z",
+    "completed_at": "2026-11-19T20:46:07Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:46:07Z",
+    "completed_at": "2026-11-19T20:46:09Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:46:09Z",
+    "completed_at": "2026-11-19T20:46:19Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:46:19Z",
+    "completed_at": "2026-11-19T20:53:47Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:53:47Z",
+    "completed_at": "2026-11-19T20:53:52Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:53:52Z",
+    "completed_at": "2026-11-19T20:53:53Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:53:53Z",
+    "completed_at": "2026-11-19T20:53:53Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:53:53Z",
+    "completed_at": "2026-11-19T21:02:44Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T21:02:44Z",
+    "completed_at": "2026-11-19T21:02:45Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 18,
+    "started_at": "2026-11-19T21:02:45Z",
+    "completed_at": "2026-11-19T21:02:48Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T21:02:48Z",
+    "completed_at": "2026-11-19T21:02:48Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T21:02:48Z",
+    "completed_at": "2026-11-19T21:02:48Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T21:02:48Z",
+    "completed_at": "2026-11-19T21:02:48Z"
+   }
+  ]
+ },
+ {
+  "id": 135870721718,
+  "name": "Run Tests [Chrome] 1/4 (github-4)",
+  "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44611677931/job/135870721718",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-19T20:45:58Z",
+  "started_at": "2026-11-19T20:46:00Z",
+  "completed_at": "2026-11-19T20:59:06Z",
+  "labels": [
+   "ubuntu-24.04"
+  ],
+  "runner_name": "GitHub Actions 1000000199",
+  "runner_group_name": "GitHub Actions",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-19T20:46:00Z",
+    "completed_at": "2026-11-19T20:46:02Z"
+   },
+   {
+    "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-19T20:46:02Z",
+    "completed_at": "2026-11-19T20:46:04Z"
+   },
+   {
+    "name": "\ud83d\udce5 Download artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-19T20:46:04Z",
+    "completed_at": "2026-11-19T20:46:07Z"
+   },
+   {
+    "name": "Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-19T20:46:07Z",
+    "completed_at": "2026-11-19T20:46:25Z"
+   },
+   {
+    "name": "Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-19T20:46:25Z",
+    "completed_at": "2026-11-19T20:47:15Z"
+   },
+   {
+    "name": "Build the shared test packages",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-19T20:47:15Z",
+    "completed_at": "2026-11-19T20:47:23Z"
+   },
+   {
+    "name": "Start the web server",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-19T20:47:23Z",
+    "completed_at": "2026-11-19T20:47:24Z"
+   },
+   {
+    "name": "Run Playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 8,
+    "started_at": "2026-11-19T20:47:24Z",
+    "completed_at": "2026-11-19T20:47:24Z"
+   },
+   {
+    "name": "Run Playwright tests",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-19T20:47:24Z",
+    "completed_at": "2026-11-19T20:58:52Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-19T20:58:52Z",
+    "completed_at": "2026-11-19T20:58:53Z"
+   },
+   {
+    "name": "Post Setup playwright",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 18,
+    "started_at": "2026-11-19T20:58:53Z",
+    "completed_at": "2026-11-19T20:59:04Z"
+   },
+   {
+    "name": "Post Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-19T20:59:04Z",
+    "completed_at": "2026-11-19T20:59:05Z"
+   },
+   {
+    "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-19T20:59:05Z",
+    "completed_at": "2026-11-19T20:59:05Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-19T20:59:05Z",
+    "completed_at": "2026-11-19T20:59:05Z"
+   }
+  ]
+ }
+]
