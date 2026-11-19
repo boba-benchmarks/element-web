@@ -1,0 +1,29 @@
+{
+ "at": "2026-11-19T21:36:22+00:00",
+ "suite": "element-web",
+ "repo": "boba-benchmarks/element-web",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/element-web/actions/runs/44618016767",
+ "run_id": 44618016767,
+ "sha": "4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f",
+ "conclusion": "success",
+ "wall_s": 845,
+ "queue_s": 4,
+ "job_s": 2525,
+ "jobs": 5,
+ "job_max_s": 753,
+ "vcpu_min": 168.3,
+ "billed_min": 44,
+ "usd": 0.528,
+ "tests": {
+  "passed": 681,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 4,
+  "failed_tests": [],
+  "flaky_tests": [],
+  "files": 4
+ }
+}
