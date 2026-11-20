@@ -1,0 +1,52 @@
+[
+ {
+  "name": "Boba / Run Tests [Chrome] 4/4 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136302666764",
+  "conclusion": "success",
+  "started_at": "2026-11-20T12:57:25Z",
+  "completed_at": "2026-11-20T13:00:17Z",
+  "title": "165 passed",
+  "summary": "### \u2705 All 165 tests passed in 2 min 52 s\n\nOn 4ed0d4e \u00b7 3 min 41 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_e2d235c5c691243b/e2d14d43e29077a23c7852f97ed9a9ba/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 3/4 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136302257519",
+  "conclusion": "success",
+  "started_at": "2026-11-20T12:57:27Z",
+  "completed_at": "2026-11-20T12:59:27Z",
+  "title": "175 passed",
+  "summary": "### \u2705 All 175 tests passed in 2 min\n\nOn 4ed0d4e \u00b7 2 min 49 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_0b6c22e6d29d1377/0972d7304cdc7acfd4f96799c8261613/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 1/4 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136302157001",
+  "conclusion": "success",
+  "started_at": "2026-11-20T12:57:32Z",
+  "completed_at": "2026-11-20T12:59:13Z",
+  "title": "176 passed",
+  "summary": "### \u2705 All 176 tests passed in 1 min 42 s\n\nOn 4ed0d4e \u00b7 2 min 34 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_80e8ff9cac63aa91/62868a6fb830c8b0868dec0cedef6aed/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 2/4 (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136302149107",
+  "conclusion": "success",
+  "started_at": "2026-11-20T12:57:34Z",
+  "completed_at": "2026-11-20T12:59:11Z",
+  "title": "165 passed",
+  "summary": "### \u2705 All 165 tests passed in 1 min 38 s\n\nOn 4ed0d4e \u00b7 2 min 35 s into the job \u00b7 1 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ccf103916ff08744/02097724121263ab097aeb9b51457c87/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136300931359",
+  "conclusion": "success",
+  "started_at": "2026-11-20T12:56:37Z",
+  "completed_at": "2026-11-20T13:00:31Z",
+  "title": "All 5 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Build Element Web (boba-standard) | Passed | The job ended (success) |\n| [Run Tests [Chrome] 1/4 (boba-standard)](https://github.com/boba-benchmarks/element-web/runs/136302157001) | Passed | 176 passed |\n| [Run Tests [Chrome] 2/4 (boba-standard)](https://github.com/boba-benchmarks/element-web/runs/136302149107) | Passed | 165 passed |\n| [Run Tests [Chrome] 3/4 (boba-standard)](https://github.com/boba-benchmarks/element-web/runs/136302257519) | Passed | 175 passed |\n| [Run Tests [Chrome] 4/4 (boba-standard)](https://github.com/boba-benchmarks/element-web/runs/136302666764) | Passed | 165 passed |",
+  "text": null
+ }
+]
