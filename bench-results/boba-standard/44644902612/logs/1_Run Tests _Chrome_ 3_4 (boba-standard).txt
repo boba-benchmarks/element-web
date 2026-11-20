@@ -1,0 +1,802 @@
+﻿2026-11-20T00:21:48.6143094Z Current runner version: '2.338.2'
+2026-11-20T00:21:48.6148357Z Runner name: 'boba-135985964589-1'
+2026-11-20T00:21:48.6149127Z Runner group name: 'coldtea boba - element-web'
+2026-11-20T00:21:48.6149864Z Machine name: 'ubuntu'
+2026-11-20T00:21:48.6152269Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T00:21:48.6154013Z Actions: read
+2026-11-20T00:21:48.6154667Z Checks: write
+2026-11-20T00:21:48.6155377Z Contents: read
+2026-11-20T00:21:48.6155907Z Metadata: read
+2026-11-20T00:21:48.6156430Z PullRequests: write
+2026-11-20T00:21:48.6157039Z ##[endgroup]
+2026-11-20T00:21:48.6158703Z Secret source: Actions
+2026-11-20T00:21:48.6159709Z Cache mode: write
+2026-11-20T00:21:48.6160524Z Prepare workflow directory
+2026-11-20T00:21:48.6409555Z Prepare all required actions
+2026-11-20T00:21:48.6439610Z Getting action download info
+2026-11-20T00:21:49.0928533Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-20T00:21:49.1435587Z Download action repository 'actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333' (SHA:9000827ccba6bdab643e8b6fd33ac0654aef8333)
+2026-11-20T00:21:49.4832891Z Download action repository 'pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1' (SHA:731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1)
+2026-11-20T00:21:49.7556297Z Download action repository 'coldteadotai/boba@v1' (SHA:30df239eb2f48d7d7ff6d7934404e2e38cbf70d5)
+2026-11-20T00:21:50.0580966Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-20T00:21:50.2141215Z Complete job name: Run Tests [Chrome] 3/4 (boba-standard)
+2026-11-20T00:21:50.2532996Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-20T00:21:50.2709048Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-20T00:21:50.2722343Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T00:21:50.2723323Z ##[endgroup]
+2026-11-20T00:21:50.3500220Z Boba checked this job in 65 ms; dependency cache: box disk; databases: fresh
+2026-11-20T00:21:50.3712419Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-20T00:21:50.3713328Z with:
+2026-11-20T00:21:50.3713879Z   persist-credentials: false
+2026-11-20T00:21:50.3714698Z   repository: boba-benchmarks/element-web
+2026-11-20T00:21:50.3719785Z   token: ***
+2026-11-20T00:21:50.3720307Z   ssh-strict: true
+2026-11-20T00:21:50.3720844Z   ssh-user: git
+2026-11-20T00:21:50.3721363Z   clean: true
+2026-11-20T00:21:50.3721934Z   sparse-checkout-cone-mode: true
+2026-11-20T00:21:50.3722577Z   fetch-depth: 1
+2026-11-20T00:21:50.3723111Z   fetch-tags: false
+2026-11-20T00:21:50.3723659Z   show-progress: true
+2026-11-20T00:21:50.3724201Z   lfs: false
+2026-11-20T00:21:50.3724708Z   submodules: false
+2026-11-20T00:21:50.3725263Z   set-safe-directory: true
+2026-11-20T00:21:50.3725888Z   allow-unsafe-pr-checkout: false
+2026-11-20T00:21:50.3726548Z env:
+2026-11-20T00:21:50.3727124Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:21:50.3727866Z ##[endgroup]
+2026-11-20T00:21:50.5464537Z Syncing repository: boba-benchmarks/element-web
+2026-11-20T00:21:50.5466209Z ##[group]Getting Git version info
+2026-11-20T00:21:50.5467099Z Working directory is '/home/runner/work/element-web/element-web'
+2026-11-20T00:21:50.5539481Z [command]/usr/bin/git version
+2026-11-20T00:21:50.5544157Z git version 2.56.1
+2026-11-20T00:21:50.5554131Z ##[endgroup]
+2026-11-20T00:21:50.5559521Z Temporarily overriding HOME='/home/runner/work/_temp/1d70cc63-db99-41d2-adc3-5ff995618124' before making global git config changes
+2026-11-20T00:21:50.5561625Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T00:21:50.5563006Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/element-web/element-web
+2026-11-20T00:21:50.5592070Z Deleting the contents of '/home/runner/work/element-web/element-web'
+2026-11-20T00:21:50.5593948Z ##[group]Determining repository object format
+2026-11-20T00:21:50.5595609Z ##[endgroup]
+2026-11-20T00:21:50.5596523Z ##[group]Initializing the repository
+2026-11-20T00:21:50.5597407Z [command]/usr/bin/git init /home/runner/work/element-web/element-web
+2026-11-20T00:21:50.5653710Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-20T00:21:50.5654922Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-20T00:21:50.5656088Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-20T00:21:50.5657058Z hint: call:
+2026-11-20T00:21:50.5657559Z hint:
+2026-11-20T00:21:50.5658207Z hint: 	git config --global init.defaultBranch <name>
+2026-11-20T00:21:50.5658966Z hint:
+2026-11-20T00:21:50.5659691Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-20T00:21:50.5660832Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-20T00:21:50.5661741Z hint:
+2026-11-20T00:21:50.5662275Z hint: 	git branch -m <name>
+2026-11-20T00:21:50.5662889Z hint:
+2026-11-20T00:21:50.5663679Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-20T00:21:50.5664937Z Initialized empty Git repository in /home/runner/work/element-web/element-web/.git/
+2026-11-20T00:21:50.5667031Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/element-web
+2026-11-20T00:21:50.5695106Z ##[endgroup]
+2026-11-20T00:21:50.5696054Z ##[group]Disabling automatic garbage collection
+2026-11-20T00:21:50.5696884Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T00:21:50.5721841Z ##[endgroup]
+2026-11-20T00:21:50.5722840Z ##[group]Setting up auth
+2026-11-20T00:21:50.5723627Z Removing SSH command configuration
+2026-11-20T00:21:50.5724586Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T00:21:50.5747399Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T00:21:50.6020241Z Removing HTTP extra header
+2026-11-20T00:21:50.6023051Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T00:21:50.6044159Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T00:21:50.6221303Z Removing includeIf entries pointing to credentials config files
+2026-11-20T00:21:50.6223772Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T00:21:50.6244231Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T00:21:50.6438499Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T00:21:50.6463675Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/element-web/element-web/.git.path /home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:50.6487757Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/element-web/element-web/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:50.6508757Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:50.6529032Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:50.6548584Z ##[endgroup]
+2026-11-20T00:21:50.6549486Z ##[group]Fetching the repository
+2026-11-20T00:21:50.6551740Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f:refs/remotes/origin/main
+2026-11-20T00:21:52.4812960Z From https://github.com/boba-benchmarks/element-web
+2026-11-20T00:21:52.4813393Z  * [new ref]         4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f -> origin/main
+2026-11-20T00:21:52.4820499Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-20T00:21:52.4839863Z   origin/main
+2026-11-20T00:21:52.4845073Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-20T00:21:52.4863317Z 4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f
+2026-11-20T00:21:52.4866168Z ##[endgroup]
+2026-11-20T00:21:52.4866653Z ##[group]Determining the checkout info
+2026-11-20T00:21:52.4868259Z ##[endgroup]
+2026-11-20T00:21:52.4868594Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T00:21:52.4899043Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T00:21:52.4918735Z ##[group]Checking out the ref
+2026-11-20T00:21:52.4920881Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T00:21:52.9669650Z Switched to a new branch 'main'
+2026-11-20T00:21:52.9670082Z branch 'main' set up to track 'origin/main'.
+2026-11-20T00:21:52.9700222Z ##[endgroup]
+2026-11-20T00:21:52.9733768Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T00:21:52.9752010Z 4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f
+2026-11-20T00:21:52.9757714Z ##[group]Removing auth
+2026-11-20T00:21:52.9757982Z Removing SSH command configuration
+2026-11-20T00:21:52.9759499Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T00:21:52.9780451Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T00:21:52.9963114Z Removing HTTP extra header
+2026-11-20T00:21:52.9963574Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T00:21:52.9984951Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T00:21:53.0169660Z Removing includeIf entries pointing to credentials config files
+2026-11-20T00:21:53.0171659Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T00:21:53.0189369Z includeif.gitdir:/home/runner/work/element-web/element-web/.git.path
+2026-11-20T00:21:53.0189703Z includeif.gitdir:/home/runner/work/element-web/element-web/.git/worktrees/*.path
+2026-11-20T00:21:53.0189985Z includeif.gitdir:/github/workspace/.git.path
+2026-11-20T00:21:53.0190258Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T00:21:53.0195634Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/element-web/element-web/.git.path
+2026-11-20T00:21:53.0210901Z /home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:53.0216711Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/element-web/element-web/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-1c36c639\-884c\-4c47\-93f8\-6a82e578b28b\.config
+2026-11-20T00:21:53.0238745Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/element-web/element-web/.git/worktrees/*.path
+2026-11-20T00:21:53.0253801Z /home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:53.0262758Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/element-web/element-web/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-1c36c639\-884c\-4c47\-93f8\-6a82e578b28b\.config
+2026-11-20T00:21:53.0284587Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-20T00:21:53.0300395Z /github/runner_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:53.0304781Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-1c36c639\-884c\-4c47\-93f8\-6a82e578b28b\.config
+2026-11-20T00:21:53.0327067Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-20T00:21:53.0343186Z /github/runner_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config
+2026-11-20T00:21:53.0349323Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-1c36c639\-884c\-4c47\-93f8\-6a82e578b28b\.config
+2026-11-20T00:21:53.0374204Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T00:21:53.0549039Z Removing credentials config '/home/runner/work/_temp/git-credentials-1c36c639-884c-4c47-93f8-6a82e578b28b.config'
+2026-11-20T00:21:53.0553844Z ##[endgroup]
+2026-11-20T00:21:53.0694305Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-11-20T00:21:53.0694559Z with:
+2026-11-20T00:21:53.0694681Z   name: webapp
+2026-11-20T00:21:53.0694811Z   path: apps/web/webapp
+2026-11-20T00:21:53.0694960Z   merge-multiple: false
+2026-11-20T00:21:53.0695185Z   repository: boba-benchmarks/element-web
+2026-11-20T00:21:53.0695350Z   run-id: 44644902612
+2026-11-20T00:21:53.0695483Z   skip-decompress: false
+2026-11-20T00:21:53.0695625Z   digest-mismatch: error
+2026-11-20T00:21:53.0695760Z env:
+2026-11-20T00:21:53.0695911Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:21:53.0696090Z ##[endgroup]
+2026-11-20T00:21:53.1628627Z Downloading single artifact
+2026-11-20T00:21:53.5227433Z Preparing to download the following artifacts:
+2026-11-20T00:21:53.5228126Z - webapp (ID: 14588500692, Size: 61466297, Expected Digest: sha256:22e71ce76a05712ceecad2eaffd3a81a69d9bceef23775e6077e15904a814a36)
+2026-11-20T00:21:53.8309531Z Redirecting to blob download url: https://productionresultssa3.blob.core.windows.net/actions-results/05186bbe-46eb-4a75-a0ba-d0f31ea5b82d/workflow-job-run-b5c17215-2027-5aa0-996e-a9e18ec49119/artifacts/2c66f372a6c929fe685806cb8c3039123427268466673bc705c5089ac843883d.zip
+2026-11-20T00:21:53.8310287Z Starting download of artifact to: /home/runner/work/element-web/element-web/apps/web/webapp
+2026-11-20T00:21:54.3111988Z (node:2009) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-20T00:21:54.3112559Z (Use `node.boba --trace-deprecation ...` to show where the warning was created)
+2026-11-20T00:22:11.9181528Z SHA256 digest of downloaded artifact is 22e71ce76a05712ceecad2eaffd3a81a69d9bceef23775e6077e15904a814a36
+2026-11-20T00:22:11.9181883Z Artifact download completed successfully.
+2026-11-20T00:22:11.9182239Z Total of 1 artifact(s) downloaded
+2026-11-20T00:22:11.9185417Z Download artifact has finished successfully
+2026-11-20T00:22:11.9424756Z ##[group]Run pnpm/setup@731dfb6463bbd11c11fd0ee11fe00ed0e36d48a1
+2026-11-20T00:22:11.9424967Z with:
+2026-11-20T00:22:11.9425088Z   cache: true
+2026-11-20T00:22:11.9425209Z   save-cache: true
+2026-11-20T00:22:11.9425336Z   install: true
+2026-11-20T00:22:11.9425470Z   require-lockfile: true
+2026-11-20T00:22:11.9425613Z   dest: ~/setup-pnpm
+2026-11-20T00:22:11.9425746Z   working-directory: .
+2026-11-20T00:22:11.9425874Z env:
+2026-11-20T00:22:11.9426021Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:22:11.9426198Z ##[endgroup]
+2026-11-20T00:22:12.0278820Z ##[group]Installing pnpm...
+2026-11-20T00:22:12.3477147Z Cache hit for: pnpm-binary-linux-x64-12.21.0
+2026-11-20T00:22:13.7833306Z Received 0 of 26753935 (0.0%), 0.0 MBs/sec
+2026-11-20T00:22:14.5600616Z Received 26753935 of 26753935 (100.0%), 14.4 MBs/sec
+2026-11-20T00:22:14.5600880Z Cache Size: ~26 MB (26753935 B)
+2026-11-20T00:22:14.5611971Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/4c0be7fa-20f4-44e1-b0cf-88cef24b9791/cache.tzst -P -C /home/runner/work/element-web/element-web --use-compress-program unzstd
+2026-11-20T00:22:14.7575996Z Cache restored successfully
+2026-11-20T00:22:14.7623384Z pnpm restored from cache key: pnpm-binary-linux-x64-12.21.0
+2026-11-20T00:22:15.0040077Z ##[endgroup]
+2026-11-20T00:22:15.0040266Z Installation Completed!
+2026-11-20T00:22:15.0047186Z ##[group]Restoring cache...
+2026-11-20T00:22:15.1786216Z Cache hit for: pnpm-lockfile-verified-Linux-x64-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff
+2026-11-20T00:22:15.9709606Z Received 1123 of 1123 (100.0%), 0.0 MBs/sec
+2026-11-20T00:22:15.9709861Z Cache Size: ~0 MB (1123 B)
+2026-11-20T00:22:15.9717167Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/152b159c-62f0-4bc2-91ec-24fa6ed5d3a4/cache.tzst -P -C /home/runner/work/element-web/element-web --use-compress-program unzstd
+2026-11-20T00:22:15.9934080Z Cache restored successfully
+2026-11-20T00:22:15.9935818Z Lockfile verification cache restored from key: pnpm-lockfile-verified-Linux-x64-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff
+2026-11-20T00:22:15.9940099Z [command]/home/runner/setup-pnpm/pnpm store path
+2026-11-20T00:22:16.0030030Z /home/runner/.local/share/pnpm/store/v11
+2026-11-20T00:22:16.1167155Z Cache is not found
+2026-11-20T00:22:16.1167437Z ##[endgroup]
+2026-11-20T00:22:16.1167677Z ##[group]Installing runtime node@26...
+2026-11-20T00:22:16.5761110Z .../global/v11/88a-18e998fc5bf453f9-0    | Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T00:22:16.6202534Z Downloading node@runtime:26.13.1: 0.00 B/62.90 MB
+2026-11-20T00:22:17.8159734Z Downloading node@runtime:26.13.1: 62.90 MB/62.90 MB, done
+2026-11-20T00:22:17.8414906Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-20T00:22:17.8415442Z   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-11-20T00:22:17.8417191Z   Virtual store is at:             ../../../.local/share/pnpm/store/v11/links
+2026-11-20T00:22:17.8427260Z .../global/v11/88a-18e998fc5bf453f9-0    | Progress: resolved 1, reused 0, downloaded 1, added 1, done
+2026-11-20T00:22:17.8488568Z 
+2026-11-20T00:22:17.8488664Z dependencies:
+2026-11-20T00:22:17.8488818Z + node 26.13.1
+2026-11-20T00:22:17.8488905Z 
+2026-11-20T00:22:17.8535091Z Done in 1.7s using pnpm v12.21.0
+2026-11-20T00:22:17.8654763Z ##[endgroup]
+2026-11-20T00:22:17.9158079Z ##[group]Running pnpm install --frozen-lockfile --no-runtime...
+2026-11-20T00:22:17.9430069Z Scope: all 14 workspace projects
+2026-11-20T00:22:17.9772045Z [WARN] Unsupported engine for @renovatebot/pep440@4.2.4: wanted: {"node":"^20.9.0 || ^22.11.0 || ^24"} (current: {"node":"26.13.1"})
+2026-11-20T00:22:17.9958674Z ✓ Lockfile passes supply-chain policies (verified 3h ago)
+2026-11-20T00:22:17.9959022Z Lockfile is up to date, resolution step is skipped
+2026-11-20T00:22:18.5738461Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-20T00:22:18.5743060Z   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-11-20T00:22:18.5743348Z   Virtual store is at:             node_modules/.pnpm
+2026-11-20T00:22:18.6206527Z Downloading pdfjs-dist@6.5.438: 0.00 B/9.14 MB
+2026-11-20T00:22:18.7726741Z Downloading cytoscape-fcose@2.2.0: 0.00 B/7.60 MB
+2026-11-20T00:22:18.9195304Z Downloading sentry@0.49.0: 0.00 B/6.09 MB
+2026-11-20T00:22:19.0933297Z Downloading maplibre-gl@6.18.0: 0.00 B/6.25 MB
+2026-11-20T00:22:19.3907264Z Downloading electron-winstaller@5.4.0: 0.00 B/9.14 MB
+2026-11-20T00:22:19.4256459Z Downloading @element-hq/element-call-embedded@0.28.2: 0.00 B/13.71 MB
+2026-11-20T00:22:19.5017493Z Downloading @oxlint/binding-linux-x64-gnu@1.93.0: 0.00 B/6.64 MB
+2026-11-20T00:22:19.7163200Z Downloading emojibase-data@17.0.0: 0.00 B/6.71 MB
+2026-11-20T00:22:20.1832780Z Downloading @rolldown/binding-linux-x64-gnu@1.2.19: 0.00 B/8.83 MB
+2026-11-20T00:22:20.1948979Z Downloading @nx/nx-linux-x64-gnu@24.0.6: 0.00 B/10.49 MB
+2026-11-20T00:22:20.2850398Z Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+2026-11-20T00:22:20.3390252Z Downloading @oxlint-tsgolint/linux-x64@7.0.2007: 0.00 B/7.83 MB
+2026-11-20T00:22:20.3993007Z Downloading mermaid@12.3.0: 0.00 B/26.28 MB
+2026-11-20T00:22:20.7818587Z Downloading posthog-js@1.450.0: 0.00 B/9.23 MB
+2026-11-20T00:22:20.8884684Z Downloading storybook@10.6.7: 0.00 B/6.13 MB
+2026-11-20T00:22:20.9348030Z Downloading @mermaid-js/mermaid-mindmap@9.3.0: 0.00 B/6.22 MB
+2026-11-20T00:22:20.9522243Z Downloading nx@24.0.6: 0.00 B/5.87 MB
+2026-11-20T00:22:21.2314993Z Downloading @napi-rs/canvas-linux-x64-gnu@1.1.0: 0.00 B/15.18 MB
+2026-11-20T00:22:21.2438822Z Downloading @element-hq/element-call-component@0.28.2: 0.00 B/18.89 MB
+2026-11-20T00:22:22.2414453Z Progress: resolved 2272, reused 0, downloaded 1651, added 1685
+2026-11-20T00:22:23.2461402Z Progress: resolved 2272, reused 0, downloaded 2181, added 2193
+2026-11-20T00:22:24.0557993Z Downloading https://codeload.github.com/element-hq/element-call/tar.gz/7cf6cb4feee3ed02adf86f547c254eab4a384272#path:/eslint: 0.00 B/6.63 MB
+2026-11-20T00:22:24.1998942Z ../../../../../tmp/.tmpHLRsZu pnpm-install$ pnpm install
+2026-11-20T00:22:25.0139878Z ../../../../../tmp/.tmpHLRsZu pnpm-install: ...gine-12.21.0-2828-1795134144997917234 | Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-11-20T00:22:25.0709907Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Downloading @pnpm/exe.linux-x64@12.21.0: 0.00 B/28.51 MB
+2026-11-20T00:22:25.1130538Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Packages are copied from the content-addressable store to the virtual store.
+2026-11-20T00:22:25.1131684Z ../../../../../tmp/.tmpHLRsZu pnpm-install:   Content-addressable store is at: /home/runner/setup-pnpm/package-manager-store/v11
+2026-11-20T00:22:25.1132389Z ../../../../../tmp/.tmpHLRsZu pnpm-install:   Virtual store is at:             ../../home/runner/setup-pnpm/package-manager-store/v11/links
+2026-11-20T00:22:25.4832161Z ../../../../../tmp/.tmpHLRsZu pnpm-install: ...gine-12.21.0-2828-1795134144997917234 | Progress: resolved 2, reused 0, downloaded 2, added 2, done
+2026-11-20T00:22:25.4877889Z ../../../../../tmp/.tmpHLRsZu pnpm-install: 
+2026-11-20T00:22:25.4878139Z ../../../../../tmp/.tmpHLRsZu pnpm-install: dependencies:
+2026-11-20T00:22:25.4878368Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + pnpm 12.21.0
+2026-11-20T00:22:25.4878573Z ../../../../../tmp/.tmpHLRsZu pnpm-install: 
+2026-11-20T00:22:25.5690866Z ../../../../../tmp/.tmpHLRsZu pnpm-install: ✓ Lockfile passes supply-chain policies (verified 3h ago)
+2026-11-20T00:22:25.5691293Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Lockfile is up to date, resolution step is skipped
+2026-11-20T00:22:25.6173243Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-20T00:22:25.6173755Z ../../../../../tmp/.tmpHLRsZu pnpm-install:   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-11-20T00:22:25.6174422Z ../../../../../tmp/.tmpHLRsZu pnpm-install:   Virtual store is at:             node_modules/.pnpm
+2026-11-20T00:22:25.7793547Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Downloading @rolldown/binding-linux-x64-gnu@1.2.12: 0.00 B/8.07 MB
+2026-11-20T00:22:26.1093941Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Packages: +358
+2026-11-20T00:22:26.1094308Z ../../../../../tmp/.tmpHLRsZu pnpm-install: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-20T00:22:26.1205353Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Progress: resolved 358, reused 210, downloaded 148, added 358, done
+2026-11-20T00:22:26.1641122Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare$ pnpm build
+2026-11-20T00:22:26.1943126Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: $ pnpm build:compile && pnpm build:types
+2026-11-20T00:22:26.2198662Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: $ babel --delete-dir-on-start -d lib --verbose --extensions ".ts,.js" src
+2026-11-20T00:22:26.5591926Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/AESEncryptedSecretStoragePayload.ts -> lib/@types/AESEncryptedSecretStoragePayload.js
+2026-11-20T00:22:26.5622978Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/another-json.d.ts -> lib/@types/another-json.d.js
+2026-11-20T00:22:26.5762280Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/auth.ts -> lib/@types/auth.js
+2026-11-20T00:22:26.5786960Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/beacon.ts -> lib/@types/beacon.js
+2026-11-20T00:22:26.5819100Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/common.ts -> lib/@types/common.js
+2026-11-20T00:22:26.5850623Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/crypto.ts -> lib/@types/crypto.js
+2026-11-20T00:22:26.6043102Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/event.ts -> lib/@types/event.js
+2026-11-20T00:22:26.6130052Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/events.ts -> lib/@types/events.js
+2026-11-20T00:22:26.6183864Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/extensible_events.ts -> lib/@types/extensible_events.js
+2026-11-20T00:22:26.6210365Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/global.d.ts -> lib/@types/global.d.js
+2026-11-20T00:22:26.6225318Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/IIdentityServerProvider.ts -> lib/@types/IIdentityServerProvider.js
+2026-11-20T00:22:26.6238741Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/json.ts -> lib/@types/json.js
+2026-11-20T00:22:26.6255518Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/local_notifications.ts -> lib/@types/local_notifications.js
+2026-11-20T00:22:26.6272708Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/location.ts -> lib/@types/location.js
+2026-11-20T00:22:26.6286088Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/matrix-sdk-crypto-wasm.d.ts -> lib/@types/matrix-sdk-crypto-wasm.d.js
+2026-11-20T00:22:26.6304974Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/media.ts -> lib/@types/media.js
+2026-11-20T00:22:26.6324877Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/membership.ts -> lib/@types/membership.js
+2026-11-20T00:22:26.6361753Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/partials.ts -> lib/@types/partials.js
+2026-11-20T00:22:26.6392971Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/polls.ts -> lib/@types/polls.js
+2026-11-20T00:22:26.6513647Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/PushRules.ts -> lib/@types/PushRules.js
+2026-11-20T00:22:26.6570386Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/read_receipts.ts -> lib/@types/read_receipts.js
+2026-11-20T00:22:26.6632699Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/registration.ts -> lib/@types/registration.js
+2026-11-20T00:22:26.6742056Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/requests.ts -> lib/@types/requests.js
+2026-11-20T00:22:26.6763399Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/retention.ts -> lib/@types/retention.js
+2026-11-20T00:22:26.6800259Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/search.ts -> lib/@types/search.js
+2026-11-20T00:22:26.6863385Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/signed.ts -> lib/@types/signed.js
+2026-11-20T00:22:26.6878793Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/spaces.ts -> lib/@types/spaces.js
+2026-11-20T00:22:26.6904638Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/state_events.ts -> lib/@types/state_events.js
+2026-11-20T00:22:26.6918410Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/synapse.ts -> lib/@types/synapse.js
+2026-11-20T00:22:26.6932170Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/sync.ts -> lib/@types/sync.js
+2026-11-20T00:22:26.6950753Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/threepids.ts -> lib/@types/threepids.js
+2026-11-20T00:22:26.6966803Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/topic.ts -> lib/@types/topic.js
+2026-11-20T00:22:26.7039290Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/type-guards.ts -> lib/@types/type-guards.js
+2026-11-20T00:22:26.7048402Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/@types/uia.ts -> lib/@types/uia.js
+2026-11-20T00:22:26.7347686Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/autodiscovery.ts -> lib/autodiscovery.js
+2026-11-20T00:22:26.7404378Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/base64.ts -> lib/base64.js
+2026-11-20T00:22:26.7434039Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/browser-index.ts -> lib/browser-index.js
+2026-11-20T00:22:26.7528267Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/capabilityPoller.ts -> lib/capabilityPoller.js
+2026-11-20T00:22:26.9650821Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/client.ts -> lib/client.js
+2026-11-20T00:22:26.9783732Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/common-crypto/CryptoBackend.ts -> lib/common-crypto/CryptoBackend.js
+2026-11-20T00:22:26.9799401Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/common-crypto/key-passphrase.ts -> lib/common-crypto/key-passphrase.js
+2026-11-20T00:22:26.9851606Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/content-helpers.ts -> lib/content-helpers.js
+2026-11-20T00:22:26.9873824Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/content-repo.ts -> lib/content-repo.js
+2026-11-20T00:22:26.9893590Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/CryptoEvent.ts -> lib/crypto-api/CryptoEvent.js
+2026-11-20T00:22:26.9906050Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/CryptoEventHandlerMap.ts -> lib/crypto-api/CryptoEventHandlerMap.js
+2026-11-20T00:22:26.9999543Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/index.ts -> lib/crypto-api/index.js
+2026-11-20T00:22:27.0015873Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/key-passphrase.ts -> lib/crypto-api/key-passphrase.js
+2026-11-20T00:22:27.0031094Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/keybackup.ts -> lib/crypto-api/keybackup.js
+2026-11-20T00:22:27.0048623Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/recovery-key.ts -> lib/crypto-api/recovery-key.js
+2026-11-20T00:22:27.0067561Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto-api/verification.ts -> lib/crypto-api/verification.js
+2026-11-20T00:22:27.0091154Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto/store/base.ts -> lib/crypto/store/base.js
+2026-11-20T00:22:27.0165204Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto/store/indexeddb-crypto-store-backend.ts -> lib/crypto/store/indexeddb-crypto-store-backend.js
+2026-11-20T00:22:27.0261078Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto/store/indexeddb-crypto-store.ts -> lib/crypto/store/indexeddb-crypto-store.js
+2026-11-20T00:22:27.0307341Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto/store/localStorage-crypto-store.ts -> lib/crypto/store/localStorage-crypto-store.js
+2026-11-20T00:22:27.0342451Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/crypto/store/memory-crypto-store.ts -> lib/crypto/store/memory-crypto-store.js
+2026-11-20T00:22:27.0350914Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/digest.ts -> lib/digest.js
+2026-11-20T00:22:27.0569719Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/embedded.ts -> lib/embedded.js
+2026-11-20T00:22:27.0610320Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/errors.ts -> lib/errors.js
+2026-11-20T00:22:27.0629866Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/event-mapper.ts -> lib/event-mapper.js
+2026-11-20T00:22:27.0640042Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/ExtensibleEvent.ts -> lib/extensible_events_v1/ExtensibleEvent.js
+2026-11-20T00:22:27.0647120Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/InvalidEventError.ts -> lib/extensible_events_v1/InvalidEventError.js
+2026-11-20T00:22:27.0667627Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/MessageEvent.ts -> lib/extensible_events_v1/MessageEvent.js
+2026-11-20T00:22:27.0683031Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/PollEndEvent.ts -> lib/extensible_events_v1/PollEndEvent.js
+2026-11-20T00:22:27.0701693Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/PollResponseEvent.ts -> lib/extensible_events_v1/PollResponseEvent.js
+2026-11-20T00:22:27.0731312Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/PollStartEvent.ts -> lib/extensible_events_v1/PollStartEvent.js
+2026-11-20T00:22:27.0739250Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/extensible_events_v1/utilities.ts -> lib/extensible_events_v1/utilities.js
+2026-11-20T00:22:27.0754730Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/feature.ts -> lib/feature.js
+2026-11-20T00:22:27.0779658Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/filter-component.ts -> lib/filter-component.js
+2026-11-20T00:22:27.0804358Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/filter.ts -> lib/filter.js
+2026-11-20T00:22:27.0840929Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/errors.ts -> lib/http-api/errors.js
+2026-11-20T00:22:27.0940505Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/fetch.ts -> lib/http-api/fetch.js
+2026-11-20T00:22:27.0971054Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/index.ts -> lib/http-api/index.js
+2026-11-20T00:22:27.0983851Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/interface.ts -> lib/http-api/interface.js
+2026-11-20T00:22:27.0993048Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/logging.ts -> lib/http-api/logging.js
+2026-11-20T00:22:27.1000984Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/method.ts -> lib/http-api/method.js
+2026-11-20T00:22:27.1010118Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/prefix.ts -> lib/http-api/prefix.js
+2026-11-20T00:22:27.1043142Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/refresh.ts -> lib/http-api/refresh.js
+2026-11-20T00:22:27.1064614Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/http-api/utils.ts -> lib/http-api/utils.js
+2026-11-20T00:22:27.1073327Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/index.ts -> lib/index.js
+2026-11-20T00:22:27.1082211Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/indexeddb-helpers.ts -> lib/indexeddb-helpers.js
+2026-11-20T00:22:27.1089859Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/indexeddb-worker.ts -> lib/indexeddb-worker.js
+2026-11-20T00:22:27.1141955Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/interactive-auth.ts -> lib/interactive-auth.js
+2026-11-20T00:22:27.1165827Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/logger.ts -> lib/logger.js
+2026-11-20T00:22:27.1237389Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrix.ts -> lib/matrix.js
+2026-11-20T00:22:27.1246950Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/CallIntent.ts -> lib/matrixrtc/CallIntent.js
+2026-11-20T00:22:27.1296963Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/CallMembership.ts -> lib/matrixrtc/CallMembership.js
+2026-11-20T00:22:27.1306004Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/EncryptionManager.ts -> lib/matrixrtc/EncryptionManager.js
+2026-11-20T00:22:27.1315262Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/IKeyTransport.ts -> lib/matrixrtc/IKeyTransport.js
+2026-11-20T00:22:27.1324989Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/IMembershipManager.ts -> lib/matrixrtc/IMembershipManager.js
+2026-11-20T00:22:27.1331896Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/index.ts -> lib/matrixrtc/index.js
+2026-11-20T00:22:27.1346567Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/LivekitTransport.ts -> lib/matrixrtc/LivekitTransport.js
+2026-11-20T00:22:27.1428032Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/MatrixRTCSession.ts -> lib/matrixrtc/MatrixRTCSession.js
+2026-11-20T00:22:27.1454032Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/MatrixRTCSessionManager.ts -> lib/matrixrtc/MatrixRTCSessionManager.js
+2026-11-20T00:22:27.1521705Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/membershipData/common.ts -> lib/matrixrtc/membershipData/common.js
+2026-11-20T00:22:27.1532953Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/membershipData/index.ts -> lib/matrixrtc/membershipData/index.js
+2026-11-20T00:22:27.1559211Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/membershipData/rtc.ts -> lib/matrixrtc/membershipData/rtc.js
+2026-11-20T00:22:27.1574211Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/membershipData/session.ts -> lib/matrixrtc/membershipData/session.js
+2026-11-20T00:22:27.1776134Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/MembershipManager.ts -> lib/matrixrtc/MembershipManager.js
+2026-11-20T00:22:27.1844757Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/MembershipManagerActionScheduler.ts -> lib/matrixrtc/MembershipManagerActionScheduler.js
+2026-11-20T00:22:27.1896731Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/RTCEncryptionManager.ts -> lib/matrixrtc/RTCEncryptionManager.js
+2026-11-20T00:22:27.1924290Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/ToDeviceKeyTransport.ts -> lib/matrixrtc/ToDeviceKeyTransport.js
+2026-11-20T00:22:27.1965794Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/types.ts -> lib/matrixrtc/types.js
+2026-11-20T00:22:27.1981421Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/matrixrtc/utils.ts -> lib/matrixrtc/utils.js
+2026-11-20T00:22:27.2011094Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/beacon.ts -> lib/models/beacon.js
+2026-11-20T00:22:27.2023671Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/compare-event-ordering.ts -> lib/models/compare-event-ordering.js
+2026-11-20T00:22:27.2039477Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/device.ts -> lib/models/device.js
+2026-11-20T00:22:27.2053055Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/event-context.ts -> lib/models/event-context.js
+2026-11-20T00:22:27.2060708Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/event-status.ts -> lib/models/event-status.js
+2026-11-20T00:22:27.2123109Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/event-timeline-set.ts -> lib/models/event-timeline-set.js
+2026-11-20T00:22:27.2184092Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/event-timeline.ts -> lib/models/event-timeline.js
+2026-11-20T00:22:27.2282354Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/event.ts -> lib/models/event.js
+2026-11-20T00:22:27.2292950Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/invites-ignorer-types.ts -> lib/models/invites-ignorer-types.js
+2026-11-20T00:22:27.2323976Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/invites-ignorer.ts -> lib/models/invites-ignorer.js
+2026-11-20T00:22:27.2384707Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/MSC3089Branch.ts -> lib/models/MSC3089Branch.js
+2026-11-20T00:22:27.2436666Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/MSC3089TreeSpace.ts -> lib/models/MSC3089TreeSpace.js
+2026-11-20T00:22:27.2468154Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/poll.ts -> lib/models/poll.js
+2026-11-20T00:22:27.2474580Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/profile-keys.ts -> lib/models/profile-keys.js
+2026-11-20T00:22:27.2508223Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/read-receipt.ts -> lib/models/read-receipt.js
+2026-11-20T00:22:27.2518850Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/related-relations.ts -> lib/models/related-relations.js
+2026-11-20T00:22:27.2538384Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/relations-container.ts -> lib/models/relations-container.js
+2026-11-20T00:22:27.2576720Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/relations.ts -> lib/models/relations.js
+2026-11-20T00:22:27.2644456Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-member.ts -> lib/models/room-member.js
+2026-11-20T00:22:27.2684956Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-receipts.ts -> lib/models/room-receipts.js
+2026-11-20T00:22:27.2718823Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-retention.ts -> lib/models/room-retention.js
+2026-11-20T00:22:27.2796293Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-state.ts -> lib/models/room-state.js
+2026-11-20T00:22:27.2872409Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-sticky-events.ts -> lib/models/room-sticky-events.js
+2026-11-20T00:22:27.2881146Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room-summary.ts -> lib/models/room-summary.js
+2026-11-20T00:22:27.3224911Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/room.ts -> lib/models/room.js
+2026-11-20T00:22:27.3239685Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/search-result.ts -> lib/models/search-result.js
+2026-11-20T00:22:27.3326267Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/thread.ts -> lib/models/thread.js
+2026-11-20T00:22:27.3365664Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/ToDeviceMessage.ts -> lib/models/ToDeviceMessage.js
+2026-11-20T00:22:27.3384419Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/typed-event-emitter.ts -> lib/models/typed-event-emitter.js
+2026-11-20T00:22:27.3407792Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/models/user.ts -> lib/models/user.js
+2026-11-20T00:22:27.3423187Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/NamespacedValue.ts -> lib/NamespacedValue.js
+2026-11-20T00:22:27.3448554Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/authorize.ts -> lib/oauth/authorize.js
+2026-11-20T00:22:27.3458262Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/discover.ts -> lib/oauth/discover.js
+2026-11-20T00:22:27.3473600Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/error.ts -> lib/oauth/error.js
+2026-11-20T00:22:27.3483456Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/fetch.ts -> lib/oauth/fetch.js
+2026-11-20T00:22:27.3516849Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/index.ts -> lib/oauth/index.js
+2026-11-20T00:22:27.3528144Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/register.ts -> lib/oauth/register.js
+2026-11-20T00:22:27.3542029Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/oauth/tokenRefresher.ts -> lib/oauth/tokenRefresher.js
+2026-11-20T00:22:27.3560247Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/pollingCachedValue.ts -> lib/pollingCachedValue.js
+2026-11-20T00:22:27.3614689Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/pushprocessor.ts -> lib/pushprocessor.js
+2026-11-20T00:22:27.3656038Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/randomstring.ts -> lib/randomstring.js
+2026-11-20T00:22:27.3672667Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/realtime-callbacks.ts -> lib/realtime-callbacks.js
+2026-11-20T00:22:27.3691973Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/receipt-accumulator.ts -> lib/receipt-accumulator.js
+2026-11-20T00:22:27.3705749Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/ReEmitter.ts -> lib/ReEmitter.js
+2026-11-20T00:22:27.3713267Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/channels/index.ts -> lib/rendezvous/channels/index.js
+2026-11-20T00:22:27.3736903Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/channels/MSC4108SecureChannel.ts -> lib/rendezvous/channels/MSC4108SecureChannel.js
+2026-11-20T00:22:27.3752351Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/index.ts -> lib/rendezvous/index.js
+2026-11-20T00:22:27.3797506Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/MSC4108SignInWithQR.ts -> lib/rendezvous/MSC4108SignInWithQR.js
+2026-11-20T00:22:27.3804091Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousChannel.ts -> lib/rendezvous/RendezvousChannel.js
+2026-11-20T00:22:27.3809969Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousCode.ts -> lib/rendezvous/RendezvousCode.js
+2026-11-20T00:22:27.3816877Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousError.ts -> lib/rendezvous/RendezvousError.js
+2026-11-20T00:22:27.3826372Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousFailureReason.ts -> lib/rendezvous/RendezvousFailureReason.js
+2026-11-20T00:22:27.3832962Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousIntent.ts -> lib/rendezvous/RendezvousIntent.js
+2026-11-20T00:22:27.3839569Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/RendezvousTransport.ts -> lib/rendezvous/RendezvousTransport.js
+2026-11-20T00:22:27.3846771Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/SignInWithQRFlow.ts -> lib/rendezvous/SignInWithQRFlow.js
+2026-11-20T00:22:27.3853269Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/transports/index.ts -> lib/rendezvous/transports/index.js
+2026-11-20T00:22:27.3941147Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rendezvous/transports/MSC4108RendezvousSession.ts -> lib/rendezvous/transports/MSC4108RendezvousSession.js
+2026-11-20T00:22:27.3953178Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/retentionPolicy.ts -> lib/retentionPolicy.js
+2026-11-20T00:22:27.3976558Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/room-hierarchy.ts -> lib/room-hierarchy.js
+2026-11-20T00:22:27.3986766Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/room-summary-api.ts -> lib/room-summary-api.js
+2026-11-20T00:22:27.3994853Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rtcTransportsCachedValue.ts -> lib/rtcTransportsCachedValue.js
+2026-11-20T00:22:27.4069254Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/backup.ts -> lib/rust-crypto/backup.js
+2026-11-20T00:22:27.4075966Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/constants.ts -> lib/rust-crypto/constants.js
+2026-11-20T00:22:27.4094953Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/CrossSigningIdentity.ts -> lib/rust-crypto/CrossSigningIdentity.js
+2026-11-20T00:22:27.4127328Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/DehydratedDeviceManager.ts -> lib/rust-crypto/DehydratedDeviceManager.js
+2026-11-20T00:22:27.4187276Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/device-converter.ts -> lib/rust-crypto/device-converter.js
+2026-11-20T00:22:27.4211209Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/index.ts -> lib/rust-crypto/index.js
+2026-11-20T00:22:27.4226289Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/KeyClaimManager.ts -> lib/rust-crypto/KeyClaimManager.js
+2026-11-20T00:22:27.4267774Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/libolm_migration.ts -> lib/rust-crypto/libolm_migration.js
+2026-11-20T00:22:27.4293482Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/OutgoingRequestProcessor.ts -> lib/rust-crypto/OutgoingRequestProcessor.js
+2026-11-20T00:22:27.4310845Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/OutgoingRequestsManager.ts -> lib/rust-crypto/OutgoingRequestsManager.js
+2026-11-20T00:22:27.4352485Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/PerSessionKeyBackupDownloader.ts -> lib/rust-crypto/PerSessionKeyBackupDownloader.js
+2026-11-20T00:22:27.4381290Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/RoomEncryptor.ts -> lib/rust-crypto/RoomEncryptor.js
+2026-11-20T00:22:27.4611331Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/rust-crypto.ts -> lib/rust-crypto/rust-crypto.js
+2026-11-20T00:22:27.4677620Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/secret-storage.ts -> lib/rust-crypto/secret-storage.js
+2026-11-20T00:22:27.4735347Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/rust-crypto/verification.ts -> lib/rust-crypto/verification.js
+2026-11-20T00:22:27.4763293Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/scheduler.ts -> lib/scheduler.js
+2026-11-20T00:22:27.4798552Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/secret-storage.ts -> lib/secret-storage.js
+2026-11-20T00:22:27.4811557Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/serverCapabilities.ts -> lib/serverCapabilities.js
+2026-11-20T00:22:27.4818350Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/service-types.ts -> lib/service-types.js
+2026-11-20T00:22:27.4894292Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/sliding-sync-sdk.ts -> lib/sliding-sync-sdk.js
+2026-11-20T00:22:27.5015534Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/sliding-sync.ts -> lib/sliding-sync.js
+2026-11-20T00:22:27.5027770Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/StickyEventSendQueue.ts -> lib/StickyEventSendQueue.js
+2026-11-20T00:22:27.5038346Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/index.ts -> lib/store/index.js
+2026-11-20T00:22:27.5045644Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/indexeddb-backend.ts -> lib/store/indexeddb-backend.js
+2026-11-20T00:22:27.5100970Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/indexeddb-local-backend.ts -> lib/store/indexeddb-local-backend.js
+2026-11-20T00:22:27.5126906Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/indexeddb-remote-backend.ts -> lib/store/indexeddb-remote-backend.js
+2026-11-20T00:22:27.5148230Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/indexeddb-store-worker.ts -> lib/store/indexeddb-store-worker.js
+2026-11-20T00:22:27.5235607Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/indexeddb.ts -> lib/store/indexeddb.js
+2026-11-20T00:22:27.5246126Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/local-storage-events-emitter.ts -> lib/store/local-storage-events-emitter.js
+2026-11-20T00:22:27.5280765Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/memory.ts -> lib/store/memory.js
+2026-11-20T00:22:27.5298227Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/store/stub.ts -> lib/store/stub.js
+2026-11-20T00:22:27.5362094Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/sync-accumulator.ts -> lib/sync-accumulator.js
+2026-11-20T00:22:27.5608129Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/sync.ts -> lib/sync.js
+2026-11-20T00:22:27.5629266Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/testing.ts -> lib/testing.js
+2026-11-20T00:22:27.5636668Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/thread-utils.ts -> lib/thread-utils.js
+2026-11-20T00:22:27.5674731Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/timeline-window.ts -> lib/timeline-window.js
+2026-11-20T00:22:27.5701252Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/ToDeviceMessageQueue.ts -> lib/ToDeviceMessageQueue.js
+2026-11-20T00:22:27.5806960Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/types.ts -> lib/types.js
+2026-11-20T00:22:27.5870390Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/utils.ts -> lib/utils.js
+2026-11-20T00:22:27.5881615Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/utils/decryptAESSecretStorageItem.ts -> lib/utils/decryptAESSecretStorageItem.js
+2026-11-20T00:22:27.5892991Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/utils/encryptAESSecretStorageItem.ts -> lib/utils/encryptAESSecretStorageItem.js
+2026-11-20T00:22:27.5904505Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/utils/internal/deriveKeys.ts -> lib/utils/internal/deriveKeys.js
+2026-11-20T00:22:27.5910767Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/utils/roomVersion.ts -> lib/utils/roomVersion.js
+2026-11-20T00:22:27.5917179Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/version-support.ts -> lib/version-support.js
+2026-11-20T00:22:27.5924928Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/audioContext.ts -> lib/webrtc/audioContext.js
+2026-11-20T00:22:27.6299062Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/call.ts -> lib/webrtc/call.js
+2026-11-20T00:22:27.6348634Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/callEventHandler.ts -> lib/webrtc/callEventHandler.js
+2026-11-20T00:22:27.6449149Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/callEventTypes.ts -> lib/webrtc/callEventTypes.js
+2026-11-20T00:22:27.6492069Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/callFeed.ts -> lib/webrtc/callFeed.js
+2026-11-20T00:22:27.6660988Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/groupCall.ts -> lib/webrtc/groupCall.js
+2026-11-20T00:22:27.6732594Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/groupCallEventHandler.ts -> lib/webrtc/groupCallEventHandler.js
+2026-11-20T00:22:27.6776634Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/mediaHandler.ts -> lib/webrtc/mediaHandler.js
+2026-11-20T00:22:27.6790394Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/callFeedStatsReporter.ts -> lib/webrtc/stats/callFeedStatsReporter.js
+2026-11-20T00:22:27.6816508Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/callStatsReportGatherer.ts -> lib/webrtc/stats/callStatsReportGatherer.js
+2026-11-20T00:22:27.6823143Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/callStatsReportSummary.ts -> lib/webrtc/stats/callStatsReportSummary.js
+2026-11-20T00:22:27.6832500Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/connectionStats.ts -> lib/webrtc/stats/connectionStats.js
+2026-11-20T00:22:27.6855967Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/connectionStatsBuilder.ts -> lib/webrtc/stats/connectionStatsBuilder.js
+2026-11-20T00:22:27.6856860Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/connectionStatsReportBuilder.ts -> lib/webrtc/stats/connectionStatsReportBuilder.js
+2026-11-20T00:22:27.6871629Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/groupCallStats.ts -> lib/webrtc/stats/groupCallStats.js
+2026-11-20T00:22:27.6884478Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/media/mediaSsrcHandler.ts -> lib/webrtc/stats/media/mediaSsrcHandler.js
+2026-11-20T00:22:27.6979142Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/media/mediaTrackHandler.ts -> lib/webrtc/stats/media/mediaTrackHandler.js
+2026-11-20T00:22:27.7058808Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/media/mediaTrackStats.ts -> lib/webrtc/stats/media/mediaTrackStats.js
+2026-11-20T00:22:27.7078938Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/media/mediaTrackStatsHandler.ts -> lib/webrtc/stats/media/mediaTrackStatsHandler.js
+2026-11-20T00:22:27.7093667Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/statsReport.ts -> lib/webrtc/stats/statsReport.js
+2026-11-20T00:22:27.7106032Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/statsReportEmitter.ts -> lib/webrtc/stats/statsReportEmitter.js
+2026-11-20T00:22:27.7130791Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/summaryStatsReportGatherer.ts -> lib/webrtc/stats/summaryStatsReportGatherer.js
+2026-11-20T00:22:27.7211094Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/trackStatsBuilder.ts -> lib/webrtc/stats/trackStatsBuilder.js
+2026-11-20T00:22:27.7222695Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/transportStats.ts -> lib/webrtc/stats/transportStats.js
+2026-11-20T00:22:27.7235792Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/transportStatsBuilder.ts -> lib/webrtc/stats/transportStatsBuilder.js
+2026-11-20T00:22:27.7245771Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/webrtc/stats/valueFormatter.ts -> lib/webrtc/stats/valueFormatter.js
+2026-11-20T00:22:27.7255523Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: src/wellKnownCachedValue.ts -> lib/wellKnownCachedValue.js
+2026-11-20T00:22:27.7260015Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: Successfully compiled 235 files with Babel (1366ms).
+2026-11-20T00:22:27.7944128Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: $ tsc -p tsconfig-build.json --emitDeclarationOnly
+2026-11-20T00:22:28.4632521Z ../../../../../tmp/.tmpHLRsZu pnpm-install: . prepare: Done
+2026-11-20T00:22:28.4646782Z ../../../../../tmp/.tmpHLRsZu pnpm-install: 
+2026-11-20T00:22:28.4647012Z ../../../../../tmp/.tmpHLRsZu pnpm-install: dependencies:
+2026-11-20T00:22:28.4647258Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/runtime 8.1.2
+2026-11-20T00:22:28.4647626Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @matrix-org/matrix-sdk-crypto-wasm 19.0.1
+2026-11-20T00:22:28.4648017Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + another-json 0.2.0
+2026-11-20T00:22:28.4648289Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + bs58 6.0.0
+2026-11-20T00:22:28.4648556Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + content-type 3.1.1
+2026-11-20T00:22:28.4648827Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + loglevel 1.9.2
+2026-11-20T00:22:28.4649118Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + matrix-events-sdk 0.0.1
+2026-11-20T00:22:28.4649413Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + matrix-widget-api 1.20.0
+2026-11-20T00:22:28.4649703Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + p-retry 9.0.0
+2026-11-20T00:22:28.4649963Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + re2js 2.10.0
+2026-11-20T00:22:28.4650230Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + sdp-transform 3.0.0
+2026-11-20T00:22:28.4650493Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + unhomoglyph 1.0.6
+2026-11-20T00:22:28.4650743Z ../../../../../tmp/.tmpHLRsZu pnpm-install: 
+2026-11-20T00:22:28.4651230Z ../../../../../tmp/.tmpHLRsZu pnpm-install: devDependencies:
+2026-11-20T00:22:28.4651522Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @action-validator/cli 0.6.0
+2026-11-20T00:22:28.4651825Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @action-validator/core 0.6.0
+2026-11-20T00:22:28.4652169Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/cli 8.1.0
+2026-11-20T00:22:28.4652432Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/core 8.1.2
+2026-11-20T00:22:28.4652733Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-proposal-decorators 8.0.2
+2026-11-20T00:22:28.4653099Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-transform-class-properties 8.0.1
+2026-11-20T00:22:28.4653663Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-transform-numeric-separator 8.0.1
+2026-11-20T00:22:28.4667742Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-transform-object-rest-spread 8.0.1
+2026-11-20T00:22:28.4668243Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-transform-runtime 8.1.2
+2026-11-20T00:22:28.4668849Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/plugin-transform-typescript 8.0.6
+2026-11-20T00:22:28.4669181Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/preset-env 8.0.7
+2026-11-20T00:22:28.4669479Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @babel/preset-typescript 8.0.7
+2026-11-20T00:22:28.4669779Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @fetch-mock/vitest 0.2.18
+2026-11-20T00:22:28.4670072Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @matrix-org/olm 3.2.15
+2026-11-20T00:22:28.4670937Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @types/debug 4.1.13
+2026-11-20T00:22:28.4671190Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @types/node 22.20.5
+2026-11-20T00:22:28.4671439Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @types/sdp-transform 3.0.0
+2026-11-20T00:22:28.4671749Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @typescript/native <- typescript 7.0.2
+2026-11-20T00:22:28.4672076Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @vitest/coverage-v8 5.1.0
+2026-11-20T00:22:28.4672313Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + @vitest/ui 5.1.0
+2026-11-20T00:22:28.4672536Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + concurrently 10.0.7
+2026-11-20T00:22:28.4672756Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + debug 4.4.3
+2026-11-20T00:22:28.4672970Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + fake-indexeddb 6.2.8
+2026-11-20T00:22:28.4673556Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + fetch-mock 12.6.0
+2026-11-20T00:22:28.4673821Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + happy-dom 21.0.4
+2026-11-20T00:22:28.4674050Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + husky 9.1.7
+2026-11-20T00:22:28.4674260Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + knip 6.45.1
+2026-11-20T00:22:28.4674485Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + lint-staged 17.6.0
+2026-11-20T00:22:28.4674727Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + matrix-mock-request 2.6.0
+2026-11-20T00:22:28.4674964Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + oxfmt 0.78.0
+2026-11-20T00:22:28.4675189Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + oxlint 1.93.0
+2026-11-20T00:22:28.4675415Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + oxlint-tsgolint 7.0.2007
+2026-11-20T00:22:28.4675649Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + typedoc 0.28.20
+2026-11-20T00:22:28.4675891Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + typedoc-plugin-coverage 4.0.3
+2026-11-20T00:22:28.4676164Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + typedoc-plugin-mdn-links 5.1.1
+2026-11-20T00:22:28.4676451Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + typedoc-plugin-missing-exports 4.1.4
+2026-11-20T00:22:28.4676758Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + typescript <- @typescript/typescript6 6.0.2
+2026-11-20T00:22:28.4677022Z ../../../../../tmp/.tmpHLRsZu pnpm-install: + vitest 5.1.0
+2026-11-20T00:22:28.4677221Z ../../../../../tmp/.tmpHLRsZu pnpm-install: 
+2026-11-20T00:22:28.4677599Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Done in 2.9s using pnpm v12.21.0
+2026-11-20T00:22:30.8901833Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Done in 6.7s using pnpm v12.21.0
+2026-11-20T00:22:30.9037737Z ../../../../../tmp/.tmpHLRsZu pnpm-install: Done
+2026-11-20T00:22:31.3327723Z Packages: +2272
+2026-11-20T00:22:31.3904687Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-20T00:22:31.3904996Z Progress: resolved 2272, reused 0, downloaded 2221, added 2272, done
+2026-11-20T00:22:31.5161158Z Agent skills awaiting approval: storybook-addon-vis.
+2026-11-20T00:22:31.5161431Z Run "pnpm approve" to review them.
+2026-11-20T00:22:31.5181665Z . postinstall$ node scripts/pnpm-link.ts
+2026-11-20T00:22:31.6030054Z . postinstall: Done
+2026-11-20T00:22:31.6066185Z 
+2026-11-20T00:22:31.6066500Z devDependencies:
+2026-11-20T00:22:31.6066705Z + @action-validator/cli 0.6.0
+2026-11-20T00:22:31.6066885Z + @action-validator/core 0.6.0
+2026-11-20T00:22:31.6067052Z + @nx-tools/nx-container 7.3.0
+2026-11-20T00:22:31.6067218Z + @playwright/test 1.65.1
+2026-11-20T00:22:31.6067650Z + @types/node 25.9.3
+2026-11-20T00:22:31.6067823Z + @typescript/native <- typescript 7.0.2
+2026-11-20T00:22:31.6068020Z + @vitest/coverage-v8 5.1.0
+2026-11-20T00:22:31.6068179Z + @vitest/ui 5.1.0
+2026-11-20T00:22:31.6068314Z + cronstrue 3.39.0
+2026-11-20T00:22:31.6068464Z + eslint-plugin-element-call 0.0.0
+2026-11-20T00:22:31.6068718Z + eslint-plugin-element-web <- packages/eslint-plugin-element-web
+2026-11-20T00:22:31.6068967Z + eslint-plugin-react-web-api 5.30.3
+2026-11-20T00:22:31.6069152Z + eslint-plugin-storybook 10.6.7
+2026-11-20T00:22:31.6069311Z + husky 9.1.7
+2026-11-20T00:22:31.6069443Z + knip 6.45.1
+2026-11-20T00:22:31.6069574Z + lint-staged 17.6.1
+2026-11-20T00:22:31.6069718Z + lodash 4.18.1
+2026-11-20T00:22:31.6069848Z + mermaid 12.3.0
+2026-11-20T00:22:31.6069990Z + minimist 1.2.8
+2026-11-20T00:22:31.6070116Z + nx 24.0.6
+2026-11-20T00:22:31.6070241Z + oxfmt 0.78.0
+2026-11-20T00:22:31.6070371Z + oxlint 1.93.0
+2026-11-20T00:22:31.6070518Z + oxlint-tsgolint 7.0.2007
+2026-11-20T00:22:31.6070703Z + typescript <- @typescript/typescript6 6.0.2
+2026-11-20T00:22:31.6070898Z + vitepress 1.6.4
+2026-11-20T00:22:31.6071048Z + vitepress-plugin-mermaid 2.0.17
+2026-11-20T00:22:31.6071292Z + vitest 5.1.0
+2026-11-20T00:22:31.6071422Z + yaml 2.9.1
+2026-11-20T00:22:31.6071498Z 
+2026-11-20T00:22:31.6225894Z Done in 13.7s using pnpm v12.21.0
+2026-11-20T00:22:31.8595616Z ##[endgroup]
+2026-11-20T00:22:31.8837121Z Prepare all required actions
+2026-11-20T00:22:31.8837485Z Getting action download info
+2026-11-20T00:22:32.0680649Z Download action repository 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+2026-11-20T00:22:32.1759257Z ##[group]Run ./.github/actions/setup-playwright
+2026-11-20T00:22:32.1759471Z with:
+2026-11-20T00:22:32.1759606Z   needs-webkit: false
+2026-11-20T00:22:32.1759754Z   write-cache: true
+2026-11-20T00:22:32.1759885Z env:
+2026-11-20T00:22:32.1760047Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:22:32.1760252Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:22:32.1760450Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:22:32.1760630Z ##[endgroup]
+2026-11-20T00:22:32.1805652Z ##[start-action display=Calculate cache key;id=__self.key]
+2026-11-20T00:22:32.1820225Z ##[group]Run PW_VERSION=$(pnpm --silent -- playwright --version | awk '{print $2}')
+2026-11-20T00:22:32.1820636Z [36;1mPW_VERSION=$(pnpm --silent -- playwright --version | awk '{print $2}')[0m
+2026-11-20T00:22:32.1820969Z [36;1mecho "key=${PREFIX}-playwright-${PW_VERSION}" >> $GITHUB_OUTPUT[0m
+2026-11-20T00:22:32.1843953Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-20T00:22:32.1844173Z env:
+2026-11-20T00:22:32.1844355Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:22:32.1844566Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:22:32.1845187Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:22:32.1845374Z   PREFIX: Linux-X64
+2026-11-20T00:22:32.1845527Z ##[endgroup]
+2026-11-20T00:22:32.5120327Z ##[end-action id=__self.key;outcome=success;conclusion=success;duration_ms=331]
+2026-11-20T00:22:32.5122168Z ##[start-action display=Cache playwright binaries;id=__self.cache]
+2026-11-20T00:22:32.5149592Z ##[group]Run actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+2026-11-20T00:22:32.5149809Z with:
+2026-11-20T00:22:32.5149956Z   path: ~/.cache/ms-playwright
+2026-11-20T00:22:32.5150138Z   key: Linux-X64-playwright-1.65.1
+2026-11-20T00:22:32.5150317Z   enableCrossOsArchive: false
+2026-11-20T00:22:32.5150478Z   fail-on-cache-miss: false
+2026-11-20T00:22:32.5150635Z   lookup-only: false
+2026-11-20T00:22:32.5150772Z   save-always: false
+2026-11-20T00:22:32.5150908Z env:
+2026-11-20T00:22:32.5151058Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:22:32.5151264Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:22:32.5151443Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:22:32.5151620Z ##[endgroup]
+2026-11-20T00:22:32.9054444Z Cache hit for: Linux-X64-playwright-1.65.1
+2026-11-20T00:22:34.3249074Z Received 0 of 520381066 (0.0%), 0.0 MBs/sec
+2026-11-20T00:22:35.3254606Z Received 54525952 of 520381066 (10.5%), 26.0 MBs/sec
+2026-11-20T00:22:36.3244864Z Received 92274688 of 520381066 (17.7%), 29.3 MBs/sec
+2026-11-20T00:22:37.3249588Z Received 130023424 of 520381066 (25.0%), 31.0 MBs/sec
+2026-11-20T00:22:38.3253685Z Received 142606336 of 520381066 (27.4%), 27.2 MBs/sec
+2026-11-20T00:22:39.3255320Z Received 180355072 of 520381066 (34.7%), 28.7 MBs/sec
+2026-11-20T00:22:40.3246347Z Received 209715200 of 520381066 (40.3%), 28.6 MBs/sec
+2026-11-20T00:22:41.3250504Z Received 239075328 of 520381066 (45.9%), 28.5 MBs/sec
+2026-11-20T00:22:42.3255786Z Received 264241152 of 520381066 (50.8%), 28.0 MBs/sec
+2026-11-20T00:22:43.3257631Z Received 268435456 of 520381066 (51.6%), 25.6 MBs/sec
+2026-11-20T00:22:44.3266764Z Received 297795584 of 520381066 (57.2%), 25.8 MBs/sec
+2026-11-20T00:22:45.3274521Z Received 318767104 of 520381066 (61.3%), 25.3 MBs/sec
+2026-11-20T00:22:46.3269997Z Received 348127232 of 520381066 (66.9%), 25.5 MBs/sec
+2026-11-20T00:22:47.3274552Z Received 377487360 of 520381066 (72.5%), 25.7 MBs/sec
+2026-11-20T00:22:48.3268943Z Received 402653184 of 520381066 (77.4%), 25.6 MBs/sec
+2026-11-20T00:22:49.3274392Z Received 411041792 of 520381066 (79.0%), 24.5 MBs/sec
+2026-11-20T00:22:50.3279935Z Received 444596224 of 520381066 (85.4%), 24.9 MBs/sec
+2026-11-20T00:22:51.3278580Z Received 469762048 of 520381066 (90.3%), 24.9 MBs/sec
+2026-11-20T00:22:52.3285595Z Received 503603850 of 520381066 (96.8%), 25.3 MBs/sec
+2026-11-20T00:22:53.3279939Z Received 516186762 of 520381066 (99.2%), 24.6 MBs/sec
+2026-11-20T00:22:53.6995166Z Received 520381066 of 520381066 (100.0%), 24.4 MBs/sec
+2026-11-20T00:22:53.6996413Z Cache Size: ~496 MB (520381066 B)
+2026-11-20T00:22:53.7029961Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/1c5a4ec3-0e46-437c-a1f7-397979645482/cache.tzst -P -C /home/runner/work/element-web/element-web --use-compress-program unzstd
+2026-11-20T00:22:56.2929597Z Cache restored successfully
+2026-11-20T00:22:56.3982802Z Cache restored from key: Linux-X64-playwright-1.65.1
+2026-11-20T00:22:56.4331296Z ##[end-action id=__self.cache;outcome=success;conclusion=success;duration_ms=23920]
+2026-11-20T00:22:56.4333125Z ##[start-action display=Restore playwright binaries cache;id=__self.cache-restore]
+2026-11-20T00:22:56.4337312Z ##[end-action id=__self.cache-restore;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T00:22:56.4347462Z ##[start-action display=Install Playwright browsers;id=__self.__run]
+2026-11-20T00:22:56.4356139Z ##[end-action id=__self.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T00:22:56.4357450Z ##[start-action display=Install system dependencies for WebKit;id=__self.__run_2]
+2026-11-20T00:22:56.4360122Z ##[end-action id=__self.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-11-20T00:22:56.4380215Z ##[group]Run pnpm exec nx run-many -t build:playwright
+2026-11-20T00:22:56.4380476Z [36;1mpnpm exec nx run-many -t build:playwright[0m
+2026-11-20T00:22:56.4393089Z shell: /usr/bin/bash -e {0}
+2026-11-20T00:22:56.4393258Z env:
+2026-11-20T00:22:56.4393544Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:22:56.4393829Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:22:56.4394011Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:22:56.4394190Z ##[endgroup]
+2026-11-20T00:22:57.2630506Z 
+2026-11-20T00:22:57.2631685Z [7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mbuild:playwright[22m for project @element-hq/element-web-playwright-common and [1m1[22m task it depends on:[39m
+2026-11-20T00:22:57.2632082Z 
+2026-11-20T00:22:57.2633552Z [2m-[22m @element-hq/element-web-playwright-common
+2026-11-20T00:22:57.2633719Z 
+2026-11-20T00:22:57.2633798Z [2m[36m[39m[22m
+2026-11-20T00:22:57.2727192Z 
+2026-11-20T00:22:57.2727926Z [2m> [22m[2mnx run[22m @element-hq/element-web-module-api:build
+2026-11-20T00:22:57.2728297Z 
+2026-11-20T00:22:57.2738725Z [2m> [22mvite build
+2026-11-20T00:22:57.2738873Z 
+2026-11-20T00:22:57.6534045Z [36mvite v8.3.8 [32mbuilding client environment for production...[36m[39m
+2026-11-20T00:22:58.1791817Z transforming...
+2026-11-20T00:22:58.2121307Z [32m✓[0m 53 modules transformed.
+2026-11-20T00:22:58.2233994Z rendering chunks...
+2026-11-20T00:22:58.2361182Z [32m
+2026-11-20T00:22:58.2361612Z [36m[unplugin:dts][32m Start generate declaration files...[39m
+2026-11-20T00:22:58.2699863Z [32m[36m[unplugin:dts][32m Start bundling declaration files...[39m
+2026-11-20T00:22:58.7054686Z Analysis will use the bundled TypeScript version 6.0.3
+2026-11-20T00:22:59.5444717Z [33mWarning: src/api/client.ts:129:1 - (ae-extra-release-tag) The doc comment should not contain more than one release tag[39m
+2026-11-20T00:22:59.5445347Z [33mWarning: src/api/client.ts:161:1 - (ae-extra-release-tag) The doc comment should not contain more than one release tag[39m
+2026-11-20T00:22:59.5445955Z [33mWarning: src/api/urlpreview.ts:13:4 - (tsdoc-param-tag-missing-hyphen) The @param block should be followed by a parameter name and then a hyphen[39m
+2026-11-20T00:22:59.5446615Z [33mWarning: src/api/urlpreview.ts:14:4 - (tsdoc-param-tag-missing-hyphen) The @param block should be followed by a parameter name and then a hyphen[39m
+2026-11-20T00:22:59.5512281Z [32m[36m[unplugin:dts][32m Declaration files built in 1833ms.
+2026-11-20T00:22:59.5512576Z [39m
+2026-11-20T00:22:59.5514694Z computing gzip size...
+2026-11-20T00:22:59.5522674Z [2mlib/[0m[36melement-web-plugin-engine.js  [0m[1;2m38.02 kB[0m[2m │ gzip: 10.19 kB[0m[2m │ map: 150.97 kB[0m
+2026-11-20T00:22:59.5522945Z 
+2026-11-20T00:22:59.5626470Z transforming...
+2026-11-20T00:22:59.5731948Z [32m✓[0m 53 modules transformed.
+2026-11-20T00:22:59.5756004Z rendering chunks...
+2026-11-20T00:22:59.5791744Z computing gzip size...
+2026-11-20T00:22:59.5793084Z [2mlib/[0m[36melement-web-plugin-engine.umd.cjs  [0m[1;2m29.27 kB[0m[2m │ gzip: 9.27 kB[0m[2m │ map: 150.83 kB[0m
+2026-11-20T00:22:59.5793390Z 
+2026-11-20T00:22:59.5796695Z [32m✓ built in 1.92s[39m
+2026-11-20T00:22:59.6991288Z 
+2026-11-20T00:22:59.6992109Z [2m> [22m[2mnx run[22m @element-hq/element-web-playwright-common:"build:playwright"
+2026-11-20T00:22:59.6992458Z 
+2026-11-20T00:22:59.6993174Z [2m> [22mtsc -p tsconfig.build.json
+2026-11-20T00:22:59.6993306Z 
+2026-11-20T00:23:00.4183139Z 
+2026-11-20T00:23:00.4183942Z [2m[32m[39m[22m
+2026-11-20T00:23:00.4184085Z 
+2026-11-20T00:23:00.4184506Z [7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild:playwright[22m for project @element-hq/element-web-playwright-common and [1m1[22m task it depends on[39m
+2026-11-20T00:23:00.4184872Z 
+2026-11-20T00:23:00.4184874Z 
+2026-11-20T00:23:00.4199364Z   Run duration:      3.2s
+2026-11-20T00:23:00.4199538Z   Cache:             0/2 hit (0%)
+2026-11-20T00:23:00.4199722Z   Critical path:     3.1s (2 tasks)
+2026-11-20T00:23:00.4200282Z   Recoverable time:  <1ms
+2026-11-20T00:23:00.4847785Z ##[group]Run pnpm exec serve -p 8080 -L -u ./webapp > serve.log 2>&1 &
+2026-11-20T00:23:00.4848114Z [36;1mpnpm exec serve -p 8080 -L -u ./webapp > serve.log 2>&1 &[0m
+2026-11-20T00:23:00.4848466Z [36;1mfor i in $(seq 60); do curl -sf -o /dev/null http://localhost:8080/config.json && break; sleep 1; done[0m
+2026-11-20T00:23:00.4848801Z [36;1mcurl -sf -o /dev/null http://localhost:8080/config.json[0m
+2026-11-20T00:23:00.4861626Z shell: /usr/bin/bash -e {0}
+2026-11-20T00:23:00.4861795Z env:
+2026-11-20T00:23:00.4861959Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:23:00.4862176Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:23:00.4862364Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:23:00.4862535Z ##[endgroup]
+2026-11-20T00:23:01.5305895Z ##[group]Run coldteadotai/boba@v1
+2026-11-20T00:23:01.5306085Z with:
+2026-11-20T00:23:01.5306230Z   working-directory: apps/web
+2026-11-20T00:23:01.5306408Z   project: Chrome
+2026-11-20T00:23:01.5306597Z   playwright-args: --shard=3/4 --grep-invert=@mergequeue
+2026-11-20T00:23:01.5306805Z   turbo: false
+2026-11-20T00:23:01.5306946Z   fail-fast: false
+2026-11-20T00:23:01.5308414Z   github-token: ***
+2026-11-20T00:23:01.5308633Z   timeout-minutes: 60
+2026-11-20T00:23:01.5308778Z   check-name: Boba
+2026-11-20T00:23:01.5309223Z   post: true
+2026-11-20T00:23:01.5309447Z env:
+2026-11-20T00:23:01.5309691Z   NX_DEFAULT_OUTPUT_STYLE: stream-without-prefixes
+2026-11-20T00:23:01.5310011Z   PNPM_HOME: /home/runner/setup-pnpm
+2026-11-20T00:23:01.5310286Z   PNPM_CONFIG_GLOBAL_SHIMS: {"node":false}
+2026-11-20T00:23:01.5310539Z ##[endgroup]
+2026-11-20T00:23:02.7742679Z Waiting for Boba job bj_851db94d6cb0fe47
+2026-11-20T00:23:02.9893602Z Boba history read in 215 ms
+2026-11-20T00:23:04.2014963Z Boba job bj_851db94d6cb0fe47: running, resolving
+2026-11-20T00:23:06.5600779Z Boba job bj_851db94d6cb0fe47: running, building
+2026-11-20T00:23:15.6155789Z Boba job bj_851db94d6cb0fe47: running, resolving
+2026-11-20T00:23:16.8014176Z Boba job bj_851db94d6cb0fe47: running, listing
+2026-11-20T00:23:17.9920303Z Boba job bj_851db94d6cb0fe47: running, running
+2026-11-20T00:26:22.8218426Z Boba job bj_851db94d6cb0fe47: done
+2026-11-20T00:26:22.9470403Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-20T00:26:23.8165723Z Check run: https://github.com/boba-benchmarks/element-web/runs/135988148376
+2026-11-20T00:26:23.8493882Z Post job cleanup.
+2026-11-20T00:26:23.8497562Z ##[start-action display=Cache playwright binaries;id=__1a4d2626-9893-4f1f-972b-d2ae45c48bff.cache]
+2026-11-20T00:26:23.8523687Z Post job cleanup.
+2026-11-20T00:26:23.9312982Z Cache hit occurred on the primary key Linux-X64-playwright-1.65.1, not saving cache.
+2026-11-20T00:26:23.9401622Z ##[end-action id=__1a4d2626-9893-4f1f-972b-d2ae45c48bff.cache;outcome=success;conclusion=success;duration_ms=90]
+2026-11-20T00:26:23.9443825Z Post job cleanup.
+2026-11-20T00:26:24.0291293Z ##[group]Running pnpm store prune...
+2026-11-20T00:26:24.0306625Z [command]/home/runner/setup-pnpm/pnpm store prune
+2026-11-20T00:26:24.3857387Z Checking 2 registered project(s) for global virtual store usage
+2026-11-20T00:26:24.4754700Z No unused packages found in global virtual store
+2026-11-20T00:26:24.4766810Z Removed all cached metadata files
+2026-11-20T00:26:24.9465540Z Removed 2722 files (61280946 bytes)
+2026-11-20T00:26:24.9466012Z Removed 149 packages
+2026-11-20T00:26:24.9609430Z ##[endgroup]
+2026-11-20T00:26:24.9694014Z [command]/usr/local/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/element-web/element-web --files-from manifest.txt --use-compress-program zstdmt
+2026-11-20T00:26:32.7777577Z Sent 455076340 of 455076340 (100.0%), 851.0 MBs/sec
+2026-11-20T00:26:32.8649487Z Cache saved with the key: pnpm-cache-Linux-x64-123baa0095a067166ecdebc24f943d75fd4b1560104291331fed19f26cbee0f8-e63467a5aee74573a285add34b80dd8577c85927751e88eaa812d01d0eb903ff-5cd7a0aef0565f4e380daaba9f1b69a5145d90a9132e4cbe8e3bc533fa7791f1-44644902612-1-42c9406f-2045-4358-8d03-989eb5165327
+2026-11-20T00:26:32.8887971Z Post job cleanup.
+2026-11-20T00:26:32.9504396Z [command]/usr/bin/git version
+2026-11-20T00:26:32.9535095Z git version 2.56.1
+2026-11-20T00:26:32.9557380Z Temporarily overriding HOME='/home/runner/work/_temp/652dd9d9-aa1f-4f16-8370-bc8198b95edb' before making global git config changes
+2026-11-20T00:26:32.9558242Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T00:26:32.9560517Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/element-web/element-web
+2026-11-20T00:26:32.9587555Z Removing SSH command configuration
+2026-11-20T00:26:32.9591360Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T00:26:32.9616377Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T00:26:32.9868920Z Removing HTTP extra header
+2026-11-20T00:26:32.9872509Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T00:26:32.9899890Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T00:26:33.0096902Z Removing includeIf entries pointing to credentials config files
+2026-11-20T00:26:33.0100964Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T00:26:33.0128534Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T00:26:33.0464362Z Cleaning up orphan processes
+2026-11-20T00:26:33.0776537Z Terminate orphan process: pid (3381) (pnpm)
+2026-11-20T00:26:33.0789599Z Terminate orphan process: pid (3399) (sh)
+2026-11-20T00:26:33.0803230Z Terminate orphan process: pid (3400) (node-MainThread)
