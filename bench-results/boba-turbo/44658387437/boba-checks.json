@@ -1,0 +1,52 @@
+[
+ {
+  "name": "Boba / Run Tests [Chrome] 4/4 (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136035450861",
+  "conclusion": "success",
+  "started_at": "2026-11-20T02:08:35Z",
+  "completed_at": "2026-11-20T02:19:25Z",
+  "title": "165 passed, 2 flaky",
+  "summary": "### \u2705 All 165 tests passed in 10 min 50 s\n\nOn 4ed0d4e \u00b7 11 min 45 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_fb9bef5512300f99/1b96ecf22227cf59f742d26d000992cc/html/index.html)\n\n<details>\n<summary>2 flaky tests, not blocking</summary>\n\n`continues to show verification prompt after cancelling device verification` failed once here, then passed on retry\n`should send location and reply to the location on ThreadView` failed once here, then passed on retry\n\n</details>",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 2/4 (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136032378688",
+  "conclusion": "success",
+  "started_at": "2026-11-20T02:08:32Z",
+  "completed_at": "2026-11-20T02:11:44Z",
+  "title": "165 passed",
+  "summary": "### \u2705 All 165 tests passed in 3 min 12 s\n\nOn 4ed0d4e \u00b7 4 min 1 s into the job \u00b7 1 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_7a2dbcf386f3f5e9/46dd102942cf5c80739aae11a7ea2d21/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 1/4 (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136032331353",
+  "conclusion": "success",
+  "started_at": "2026-11-20T02:08:31Z",
+  "completed_at": "2026-11-20T02:11:35Z",
+  "title": "176 passed",
+  "summary": "### \u2705 All 176 tests passed in 3 min 4 s\n\nOn 4ed0d4e \u00b7 3 min 56 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_bd713c58b33a8884/e5a202bb06ecab4856e00775cd5982d9/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba / Run Tests [Chrome] 3/4 (boba-turbo)",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136032266232",
+  "conclusion": "success",
+  "started_at": "2026-11-20T02:08:30Z",
+  "completed_at": "2026-11-20T02:11:26Z",
+  "title": "175 passed",
+  "summary": "### \u2705 All 175 tests passed in 2 min 57 s\n\nOn 4ed0d4e \u00b7 3 min 46 s into the job \u00b7 3 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_f0d14be186af5892/18325fcbbc6e69b7c68bea0d411cc6b7/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/element-web/runs/136030755895",
+  "conclusion": null,
+  "started_at": "2026-11-20T02:07:40Z",
+  "completed_at": null,
+  "title": "4 of 5 Boba jobs finished",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Build Element Web (boba-turbo) | Passed | The job ended (success) |\n| [Run Tests [Chrome] 1/4 (boba-turbo)](https://github.com/boba-benchmarks/element-web/runs/136032331353) | Passed | 176 passed |\n| [Run Tests [Chrome] 2/4 (boba-turbo)](https://github.com/boba-benchmarks/element-web/runs/136032378688) | Passed | 165 passed |\n| [Run Tests [Chrome] 3/4 (boba-turbo)](https://github.com/boba-benchmarks/element-web/runs/136032266232) | Passed | 175 passed |\n| Run Tests [Chrome] 4/4 (boba-turbo) | Pending | Running |",
+  "text": null
+ }
+]
