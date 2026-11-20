@@ -1,0 +1,13 @@
+{
+ "id": 44741208856,
+ "html_url": "https://github.com/boba-benchmarks/element-web/actions/runs/44741208856",
+ "head_sha": "4ed0d4e3f52c7e41903b38abe4cdc637a2649d7f",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "success",
+ "created_at": "2026-11-20T13:05:11Z",
+ "updated_at": "2026-11-20T13:11:02Z",
+ "run_started_at": "2026-11-20T13:05:11Z",
+ "run_attempt": 1
+}
